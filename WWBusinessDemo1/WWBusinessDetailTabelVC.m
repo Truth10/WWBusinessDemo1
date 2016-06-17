@@ -31,6 +31,9 @@
 
 // 评论列表模型数组
 @property (nonatomic,strong) NSArray *commentsArr;
+
+// 头部视图
+@property (nonatomic,strong) WWBusinessDetailHeader *headerView;
 @end
 
 @implementation WWBusinessDetailTabelVC
@@ -44,11 +47,20 @@
     [self shopid];
 }
 
+#pragma mark - 控件的懒加载
+- (UITableViewHeaderFooterView *)headerView{
+    if (_headerView == nil) {
+       _headerView = [[UITableViewHeaderFooterView alloc] init];
+    }
+
+    return _headerView;
+}
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
     // 加载tableHeaderView
-    self.tableView.tableHeaderView = [WWBusinessDetailHeader BusinessDetailHeaderVc];
+    self.headerView = [WWBusinessDetailHeader BusinessDetailHeaderVc];
+    self.tableView.tableHeaderView = self.headerView;
     // 加载tableFooterView
     self.tableView.tableFooterView = [WWBusinessDetailFooter BusinessDetailFooterVc];
 
@@ -71,7 +83,7 @@
         
         // 创建模型,字典转模型
         WWBusinessDetailModel *detailModel = [WWBusinessDetailModel BusinessDetailModelWithDict:responseObject];
-        self.businessDetailModel = detailModel;
+        self.headerView.businessDetailModel = detailModel;
         
         // 商品模型数组
         self.goodsArr = [WWBusinessDetailGoodsModel businessDetailGoodsModelWithDictArr:responseObject[@"goods"]];

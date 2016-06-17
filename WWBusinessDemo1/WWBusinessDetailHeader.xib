@@ -86,7 +86,7 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THc-x1-69r">
-                    <rect key="frame" x="227" y="125" width="1" height="24"/>
+                    <rect key="frame" x="217" y="125" width="1" height="24"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="1" id="b5Y-3P-cbz"/>
@@ -94,22 +94,22 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13488881111" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxx-qa-Zsw">
-                    <rect key="frame" x="265" y="130" width="102" height="14"/>
+                    <rect key="frame" x="255" y="130" width="112" height="14"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="14" id="jIG-pw-fdf"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.93000000000000005" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mp3-Mj-ZIO">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mp3-Mj-ZIO">
                     <rect key="frame" x="12" y="164" width="351" height="48"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tF5-86-HoB">
-                    <rect key="frame" x="236" y="125" width="24" height="24"/>
+                    <rect key="frame" x="226" y="125" width="24" height="24"/>
                     <color key="backgroundColor" red="1" green="0.068003281210000002" blue="0.13168820619999999" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="24" id="4Lv-ho-20J"/>
@@ -130,12 +130,12 @@
                     <state key="normal" title="Button"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faP-i4-yZh">
-                    <rect key="frame" x="44" y="130" width="180" height="14"/>
+                    <rect key="frame" x="44" y="130" width="170" height="14"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="180" id="WSs-TR-Kbt"/>
+                        <constraint firstAttribute="width" constant="170" id="WSs-TR-Kbt"/>
                         <constraint firstAttribute="height" constant="14" id="jGF-6f-Wog"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.93000000000000005" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
