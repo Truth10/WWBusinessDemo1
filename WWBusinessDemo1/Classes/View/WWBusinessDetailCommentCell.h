@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class WWBusinessDetailCommentModel;
 @interface WWBusinessDetailCommentCell : UITableViewCell
+/**
+ *  评论的数据模型
+ */
+@property (nonatomic,strong) WWBusinessDetailCommentModel *commentModel;
 
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 @end

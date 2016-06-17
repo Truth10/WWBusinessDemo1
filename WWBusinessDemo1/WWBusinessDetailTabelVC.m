@@ -50,7 +50,8 @@
 #pragma mark - 控件的懒加载
 - (UITableViewHeaderFooterView *)headerView{
     if (_headerView == nil) {
-       _headerView = [[UITableViewHeaderFooterView alloc] init];
+       _headerView = [[WWBusinessDetailHeader alloc] init];
+        
     }
 
     return _headerView;

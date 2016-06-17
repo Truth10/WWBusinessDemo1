@@ -78,7 +78,14 @@
                     <constraint firstItem="UWW-1s-ZjC" firstAttribute="leading" secondItem="wRA-g1-7R7" secondAttribute="leading" constant="12" id="mpd-Cg-TKP"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="298" y="270"/>
+            <connections>
+                <outlet property="commentLabel" destination="UWW-1s-ZjC" id="5l3-xw-DbO"/>
+                <outlet property="iconView" destination="p6T-6B-0K0" id="abQ-Pl-V1m"/>
+                <outlet property="nameLabel" destination="1zk-tc-9Vu" id="6kZ-K2-zRU"/>
+                <outlet property="starView" destination="Vl6-Wl-c5M" id="BR7-ER-OSB"/>
+                <outlet property="timeLabel" destination="1nv-8K-BVc" id="hIr-XW-R9n"/>
+            </connections>
+            <point key="canvasLocation" x="179" y="243"/>
         </tableViewCell>
     </objects>
 </document>

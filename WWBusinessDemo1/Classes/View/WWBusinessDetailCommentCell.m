@@ -7,8 +7,28 @@
 //
 
 #import "WWBusinessDetailCommentCell.h"
+#import "WWBusinessDetailCommentModel.h"
+
+@interface WWBusinessDetailCommentCell ()
+@property (weak, nonatomic) IBOutlet UIImageView *iconView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UIView *starView;
+@property (weak, nonatomic) IBOutlet UILabel *commentLabel;
+
+@end
 
 @implementation WWBusinessDetailCommentCell
+
+#pragma mark - 重写数据模型的set方法,字典转模型
+- (void)setCommentModel:(WWBusinessDetailCommentModel *)commentModel{
+    _commentModel = commentModel;
+//    _iconView.image = [UIImage imageNamed:];
+    _nameLabel.text = commentModel.name;
+    _timeLabel.text = commentModel.time;
+    _commentLabel.text = commentModel.comment;
+
+}
 
 + (instancetype)cellWithTableView:(UITableView *)tableView{
 

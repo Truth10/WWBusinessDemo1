@@ -15,6 +15,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="514" height="119"/>
                 <autoresizingMask key="autoresizingMask"/>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="bSW-33-PS5" id="PLk-6i-RTE"/>
+                <outlet property="priceLabel" destination="akt-r2-bcz" id="h9d-zb-Zfm"/>
+                <outlet property="titleLabel" destination="fbU-Lt-X0t" id="Tvq-TI-03B"/>
+            </connections>
             <point key="canvasLocation" x="347" y="216"/>
         </tableViewCell>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="product" selectionStyle="default" indentationWidth="10" reuseIdentifier="product" rowHeight="75" id="eD5-rw-c0X" customClass="WWBusinessDetailProductCell">
@@ -30,7 +35,7 @@
                             <constraint firstAttribute="height" constant="21" id="YjG-Le-aKI"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSW-33-PS5">
